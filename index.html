@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad</title>
+</head>
+<link rel="stylesheet" href="css.css">
+<body background="Fondo.jpg" onload="Alpha()" onmousemove="G()" onmousedown="F()">
+	<div class="A" id="B"></div>
+<script>
+	var a;
+	var b;
+    var c = document.getElementById("B");
+	function Alpha(){
+		var X = Math.floor(Math.random() * ((1286+1) - 5) + 5);
+	    var Y = Math.floor(Math.random() * ((650+1) - 5) + 5);
+	    c.style.top = Y+"px";
+	    c.style.left = X+"px";
+	}
+	function G(){
+		a = event.clientX;
+	    b = event.clientY;
+	}
+	function F() {
+	    var Cx = a - 100;
+	    var Cy = b - 100;
+	    c.style.top = Cy +"px";
+	    c.style.left = Cx +"px";
+	    }
+</script>
+</body>
+</html>

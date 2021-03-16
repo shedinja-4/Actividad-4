@@ -1,0 +1,10 @@
+.A {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background-color: violet;
+	border-color: purple;
+	border: double;
+}
